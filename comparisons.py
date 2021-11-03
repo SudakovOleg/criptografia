@@ -1,5 +1,6 @@
 from nod_e import *
 from reverse_element import *
+from euler_function import *
 
 def comparisons(a, b, m):
 	if nod_e(a,m) == 1:
@@ -26,5 +27,7 @@ def comparisons(a, b, m):
 			return -1
 			
 			
-		
-		
+def power_comparisons(a, b, m):
+        new_m = euler_function(m)
+        return comparisons(a, b, new_m)
+    
