@@ -29,5 +29,4 @@ def comparisons(a, b, m):
 			
 def power_comparisons(a, b, m):
         new_m = euler_function(m)
-        return comparisons(a, b, new_m)
-    
+        return comparisons(a, b, new_m)  
