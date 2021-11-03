@@ -11,7 +11,7 @@ def a_mod_m (a, m):
 			return k
 		k += 1
 
-def first_root(m):
+def first_root (m):
 	p1 = euler_function(m)
 	pk = find_prime_factors(p1)	
 	a = 2
@@ -27,3 +27,9 @@ def first_root(m):
 			a += 1
 		else:
 			return a
+            
+def reduced_deduction (a, m):
+    deductions = []
+    for i in range(0,m - 1):
+            deductions.append((a**i)%m)
+    return deductions
